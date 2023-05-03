@@ -3,12 +3,12 @@ on:
   push:
     branches:
       - main
+      
+permissions: read-all|write-all
 
 jobs:
   sample:
-    name: Microsoft Security DevOps Analysis
-    
-    permissions: read-all|write-all
+    name: Microsoft Security DevOps Analysis        
 
     # MSDO runs on windows-latest.
     # ubuntu-latest and macos-latest supporting coming soon

@@ -5,7 +5,7 @@ on:
       - main
       
 permissions:
-     actions: read|write
+     actions: write
 
 jobs:
   sample:

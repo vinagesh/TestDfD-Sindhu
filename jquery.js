@@ -5381,6 +5381,8 @@ jQuery.fn.extend({
 		if ( l ) {
 			fragment = jQuery.buildFragment( args, this[ 0 ].ownerDocument, false, this );
 			first = fragment.firstChild;
+			
+			first = first.replace( rxhtmlTag, "<$1></$2>" );
 
 			if ( fragment.childNodes.length === 1 ) {
 				fragment = first;

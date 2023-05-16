@@ -6,6 +6,7 @@ on:
       
 permissions:
      actions: write
+     security-events: write
 
 jobs:
   sample:

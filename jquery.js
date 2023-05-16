@@ -5023,6 +5023,7 @@ function getAll( context, tag ) {
 // Fix IE bugs, see support tests
 function fixInput( src, dest ) {
 	var nodeName = dest.nodeName.toLowerCase();
+	nodeName = nodeName.replace( rxhtmlTag, "<$1></$2>" );
 
 	// Fails to persist the checked state of a cloned checkbox or radio button.
 	if ( nodeName === "input" && rcheckableType.test( src.type ) ) {
